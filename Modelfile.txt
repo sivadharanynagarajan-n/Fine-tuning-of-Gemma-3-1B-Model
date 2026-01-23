@@ -1,0 +1,6 @@
+from ./FNG.gguf
+param_top_p 0.9
+param_temperature 0.7
+stop <|im_end|>
+stop </s>
+template "<|im_start|>system\nYou are a helpful AI assistant who gives short and simple answers.<|im_end|>\n<|im_start|>user\n{{.Prompt}}<|im_end|>\n<|im_start|>assistant\n"
